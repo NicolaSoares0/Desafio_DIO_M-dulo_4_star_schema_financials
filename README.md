@@ -1,4 +1,7 @@
 Projeto: Modelagem Dimensional - Star Schema (Dados Financeiros)
+
+![Diagrama do Star Schema](imagem/Esquema_estrela.png)
+
 O Desafio e Objetivo
 Este projeto tem como objetivo demonstrar a transformação de uma base de dados plana e desnormalizada em um modelo relacional do tipo Star Schema (Esquema em Estrela), otimizado para análises de Business Intelligence no Power BI.
 
@@ -37,4 +40,12 @@ Para o desenvolvimento deste projeto, as seguintes ferramentas e linguagens fora
 *   **Power Query (Linguagem M):** Utilizado no processo de ETL para mesclar tabelas, remover duplicatas, agrupar dados e criar as tabelas dimensão a partir da base original.
 *   **DAX (Data Analysis Expressions):** Utilizado para a criação da tabela de datas inteligente (`dCalendario`) e estruturação de medidas e colunas calculadas.
 *   **Modelagem Dimensional:** Aplicação de conceitos de Business Intelligence para construção da arquitetura Star Schema. 
+
+### Passos para visualização
+1. Faça o clone deste repositório ou baixe o arquivo `.zip` clicando em *Code > Download ZIP*.
+2. Extraia os arquivos e localize o arquivo principal do projeto com a extensão `star_Schema_financias.pbix`.
+3. Dê um duplo clique no arquivo para abri-lo no Power BI Desktop.
+4. Para visualizar o **Star Schema** que foi construído, clique no ícone de **Exibição de Modelo** (o terceiro ícone no menu lateral esquerdo, com formato de diagrama).
+5. (Opcional) Caso queira ver as transformações de ETL feitas, clique em **Transformar Dados** na guia Página Inicial para abrir o Power Query.
+
 ---
