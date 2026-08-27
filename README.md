@@ -1,15 +1,12 @@
-Projeto: Modelagem Dimensional - Star Schema (Dados Financeiros)
+# Projeto: Modelagem Dimensional - Star Schema (Dados Financeiros)
 
-![Diagrama do Star Schema](imagem/Esquema_estrela.png)
+![Diagrama do Star Schema](Imagem/Esquema_estrela.png)
 
-O Desafio e Objetivo
+# O Desafio e Objetivo
 Este projeto tem como objetivo demonstrar a transformação de uma base de dados plana e desnormalizada em um modelo relacional do tipo Star Schema (Esquema em Estrela), otimizado para análises de Business Intelligence no Power BI.
 
-O Ponto de Partida
-Originalmente, o modelo contava com apenas uma tabela chamada financias. Essa tabela funcionava como um "tabelão" contendo absolutamente todos os dados misturados: transações, dados dos produtos, faixas de desconto e datas. Embora comum, esse formato gera redundância de dados, dificulta a manutenção e não é performático para o mecanismo do Power BI.
-
-Processo de Modelagem (ETL)
-Para transformar essa base única em um modelo estrela robusto, apliquei técnicas de ETL (Extração, Transformação e Carga) via Power Query e modelagem em DAX:
+# Processo de Modelagem (ETL)
+Para transformar essa base única em um modelo estrela robusto, apliquei técnicas de ETL (Extração, Transformação e Carga) via Power Query e modelagem em DAX.
 
 Derivação de Dimensões: A tabela financias original foi utilizada como consulta base para ramificar e criar tabelas de dimensões focadas em contextos específicos.
 
@@ -32,7 +29,7 @@ D_Calendario (Dimensão): Tabela de datas contínua ligada às datas das transa�
 
 D_Detalhes (Dimensão): Dimensão de apoio contendo segmentações, países e outras características contextuais.
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 Para o desenvolvimento deste projeto, as seguintes ferramentas e linguagens foram aplicadas:
 
@@ -41,7 +38,7 @@ Para o desenvolvimento deste projeto, as seguintes ferramentas e linguagens fora
 *   **DAX (Data Analysis Expressions):** Utilizado para a criação da tabela de datas inteligente (`dCalendario`) e estruturação de medidas e colunas calculadas.
 *   **Modelagem Dimensional:** Aplicação de conceitos de Business Intelligence para construção da arquitetura Star Schema. 
 
-### Passos para visualização
+## Passos para visualização
 1. Faça o clone deste repositório ou baixe o arquivo `.zip` clicando em *Code > Download ZIP*.
 2. Extraia os arquivos e localize o arquivo principal do projeto com a extensão `star_Schema_financias.pbix`.
 3. Dê um duplo clique no arquivo para abri-lo no Power BI Desktop.
